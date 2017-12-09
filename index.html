@@ -5,6 +5,10 @@
 	<title>Lauren Hu</title>
 
 	<style>
+
+	* {
+  	box-sizing: border-box; 
+	}
 	a {
 		text-decoration:none;
 	}
@@ -19,15 +23,15 @@
 
 	/* mouse over link */
 	a:hover {
-	    color: purple;
+	    color: turquoise;
 	}
 
 	/* selected link */
 	a:active {
-	    color: lightblue;
+	    color: purple;
 	}
 	h1 { 
-	    font-size: 4em;
+	    font-size: 3.5em;
 	    font-weight: bold;
 	    font-family: "Helvetica";
 	    color: "#FFFFFF";
@@ -44,16 +48,78 @@
 	p {
 		line-height: 30px;
 	}
-		</style>
-		</head>
+	body {
+	  display: flex;
+	  min-height: 100vh;
+	  flex-direction: column;
+	  margin: 0;
+	}
+	#main {
+	  display: flex;
+	  flex: 1;
+	}
+	#main > article {
+	  flex: 1;
+	}
+	#main > nav, 
+	
+	#main > nav {
+	  order: -1;
+	}
+	header, footer {
+	  background: #FFA0B0;
+	  height: 40vh;
+	}
+	header, footer, article {
+	  padding: 1em;
+	}
+	nav {
+		padding:2em;
+	}
+	</style></head>
+
+	<body bgcolor = FFA0B0>
+	  <header><center><h1><a target="_BLANK" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font color:#FFFFFF;">Lauren Hu</a></h1>
+	  <font face = "Helvetica" size = "4" color = "#FFFFFF">
+		<h4>General / Electrical Engineering<br/>Harvey Mudd College 2018</p> </font></h4></font></center>
+	</header>
+	  <div id="main">
+
+	    <article><font face = "Helvetica" size = "6" color = "#FFFFFF">
+		<a target="_BLANK" href="resume.pdf" style= "line-height: 60px; font color:#FFFFFF;"><u>resume</u></a>
+		<p style=" line-height: 5px; font color:#FFFFFF;">projects</p>
+		<ul></font><font face = "Helvetica" size = "5" color = "#FFFFFF">
+		<li><a target="_BLANK" href="https://lhu808.github.io/e155" style="text-indent: 50px; line-height: 5px; font color:#FFFFFF;"><u>ukucorn - interactive ukulele</u></a></li>
+		<li><a target="_BLANK" href="https://writer.inklestudios.com/stories/36jn" style= "line-height: 5px; font color:#500060;"><u>short story - a tale of normalcy</u></a></li>
+		</ul></font>
+		<font face = "Helvetica" size = "4" color = "#FFFFFF">
+		<p><br/><br/>Let's go to 
+		<a href="https://lhu808.github.io/space" style= "font color:#FFFFFF;"><u>space</u></a>
+		</p></font>
+
+	</article>
+	    <nav><img src = "headshot.jpg" style="width:140px;height:140px;"/>
+	    	<font face = "Helvetica" size = "2" color = "#FFFFFF"><br/><br/><br/><br/><br/><br/><br/><b>Contact:</b> lhu@g.hmc.edu <br/>340 E Foothill Blvd. <br/>#313<br/>Claremont, CA 91711</nav>
+	   <!-- <aside>Aside</aside>-->
+	  </div>
+	  <footer></footer></font>
 
 
+	</body>
 
-<body bgcolor = "#FF9AA5">
+<!--<body bgcolor = "#FF9AA5">
 	<center>	
-		<header>
+
+	
+	#main > aside {
+	  flex: 1 0 0 20vw;
+	  background: #FFA0B0; //this goes in style but couldn't comment it out for some reason?
+	}
+
+
+		<header>-->
 			<!--<font face = "Helvetica" size = "6em" color = "#FFFFFF">-->
-			<h1><a target="_BLANK" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font color:#FFFFFF;">Lauren Hu</a></h1>
+			<!--<h1><a target="_BLANK" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font color:#FFFFFF;">Lauren Hu</a></h1>
 		</header>
 		<font face = "Helvetica" size = "4" color = "#FFFFFF">
 		<h4>General / Electrical Engineering<br/>Harvey Mudd College 2018</p> </font></h4>
@@ -66,9 +132,12 @@
 		<p>Let's go to 
 		<a href="https://lhu808.github.io/space" style= "font color:#FFFFFF;">space</a>
 		</p></font>
+
+
 	</center>
 
-		
+	
+</body> -->
 
-</body>
-</html>
+
+</html> 
