@@ -31,24 +31,52 @@
       font-size: 3.5em;
       font-weight: bold;
       font-family: "Helvetica";
-      color: "#FFFFFF";
-      line-height: 25px;
+      color: #FFFFFF;
+      line-height: 0.6em;
   }
 
   h4 { 
+      font-size: 1em;
+      font-weight: normal;
+      font-family: "Helvetica";
+      color: #FFFFFF;
+      line-height: 0.5em;
+  }
+  
+  h3 {
+      font-size: 1.2em;
+      font-weight: normal;
+      font-family: "Helvetica";
+      color: #FFFFFF;
+      line-height: 0.7em;
+  }
+
+  h2 {
       font-size: 2em;
       font-weight: normal;
       font-family: "Helvetica";
-      color: "#FFFFFF";
-      line-height: 22px;
+      color: #FFFFFF;
+      line-height: 0.2em;
   }
+
   p {
-    line-height: 30px;
+    font-size:1em;
+    font-weight: normal;
+    font-family: "Helvetica";
+    color: #FFFFFF;
+    line-height: 1.2em;
+  }
+
+  li {
+    font-size:1.4em;
+    font-weight: normal;
+    font-family: "Helvetica";
+    color: #FFFFFF;
+    line-height: 1.7em;
   }
   
   body {
     display: flex;
-    min-height: 50vh;
     flex-direction: row;
     margin: 0;
   }
@@ -68,36 +96,38 @@
   }
   .content > article {
     flex: 4;
-    min-height: 60vh;
+    min-height: 10em;
   }
   header, footer {
     background: #FFA0B0;
-    height: 35vh;
+    height: 12em;
   }
   header, footer, article, nav {
     padding: 2em;
   }
 </style>
+
+
 <body bgcolor = FFA0B0>
-  <nav class="col-1"><br/><br/><img src = "headshot2.jpg" style="width:140px;height:140px;"/><font face = "Helvetica" size = "2" color = "#FFFFFF"><br/><br/><br/><br/><br/><b>Contact:</b> lhu@g.hmc.edu <br/>340 E Foothill Blvd. <br/>#313<br/>Claremont, CA 91711<br/><br/><a target="_BLANK" href="https://www.etsy.com/shop/RelativisticRhinos"><u>My Etsy Shop: <br/>Relativistic Rhinos</u></a></nav>
+  <nav class="col-1"><br/><br/><img src = "headshot2.jpg" style="width: 10em;height: 10em;"/><p><br/><br/><br/><b>Contact:</b> lhu@g.hmc.edu <br/>340 E Foothill Blvd. <br/>#313<br/>Claremont, CA 91711<br/><br/><a target="_BLANK" href="https://www.etsy.com/shop/RelativisticRhinos"><u>My Etsy Shop: <br/>Relativistic Rhinos</u></a></nav></font></p>
   <div class="col-2">
-  	<header><h1><a target="_BLANK" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font color:#FFFFFF;">Lauren Hu</a></h1>
-    <font face = "Helvetica" size = "4" color = "#FFFFFF">
-    <h4>General / Electrical Engineering<br/>Harvey Mudd College 2018</p> </font></h4></font>
+    <header><h1><a target="_BLANK" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Lauren Hu</a></h1>
+    <h3>General / Electrical Engineering<br/><br/>Harvey Mudd College 2018</h3>
   </header>
     <main class="content">
 
     <article>
-      <font face = "Helvetica" size = "6" color = "#FFFFFF">
-      <a target="_BLANK" href="resume.pdf" style= "line-height: 60px; font color:#FFFFFF;"><u>resume</u><br/></a>
+      <h2>
+      <a target="_BLANK" href="resume.pdf"><u><br/>resume<br/><br/><br/><br/><br/><br/><br/></u><br/></a></h2>
 
-      <p style=" line-height: 5px; font color:#FFFFFF;">projects</p>
-      <ul></font><font face = "Helvetica" size = "5" color = "#FFFFFF">
-      <li><a target="_BLANK" href="https://lhu808.github.io/e155" style="text-indent: 50px; line-height: 5px; font color:#FFFFFF;"><u>ukucorn - interactive ukulele</u></a></li>
-      <li><a target="_BLANK" href="https://writer.inklestudios.com/stories/36jn" style= "line-height: 5px; font color:#500060;"><u>short story - a tale of normalcy</u><br/><br/></a></li>
-      </ul></font>
+      <h2 style = "line-height: 0em">projects</h2>
+      <ul>
+      <li><a target="_BLANK" href="https://lhu808.github.io/e155"><u>ukucorn - interactive ukulele</u></a></li>
+      <li><a target="_BLANK" href="https://writer.inklestudios.com/stories/36jn"><u>short story - a tale of normalcy</u></a></li>
+      <li><a target="_BLANK" href="https://www.youtube.com/watch?v=1MClxZvyKSk"><u>E80 rocket video</u><br/></a></li>
+      </ul>
 
-      <font face = "Helvetica" size = "6" color = "#FFFFFF"><p style=" line-height: 5px; font color:#FFFFFF;">spring 2018 semester schedule</p></font>
+      <h2><br/><br/><br/><br/><br/>spring 2018 semester schedule</h2>
       <img src = "ScheduleSpring2018.jpg" width = "500"/>
 
 
@@ -108,6 +138,6 @@
     </article>
 
     </main>
-  	<footer></footer>
+    <footer></footer>
   </div>
 </body> 
