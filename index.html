@@ -1,143 +1,113 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<title>Lauren Hu</title>
 
-	<style>
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
 
-	* {
-  	box-sizing: border-box; 
-	}
-	a {
-		text-decoration:none;
-	}
-	/* unvisited link */
-	a:link {
-	    color: white;
-	}
-	/* visited link */
-	a:visited {
-	    color: white;
-	}
+  a {
+    text-decoration:none;
+  }
+  /* unvisited link */
+  a:link {
+      color: white;
+  }
+  /* visited link */
+  a:visited {
+      color: white;
+  }
 
-	/* mouse over link */
-	a:hover {
-	    color: turquoise;
-	}
+  /* mouse over link */
+  a:hover {
+      color: turquoise;
+  }
 
-	/* selected link */
-	a:active {
-	    color: purple;
-	}
-	h1 { 
-	    font-size: 3.5em;
-	    font-weight: bold;
-	    font-family: "Helvetica";
-	    color: "#FFFFFF";
-	    line-height: 25px;
-	}
+  /* selected link */
+  a:active {
+      color: purple;
+  }
+  h1 { 
+      font-size: 3.5em;
+      font-weight: bold;
+      font-family: "Helvetica";
+      color: "#FFFFFF";
+      line-height: 25px;
+  }
 
-	h4 { 
-	    font-size: 2em;
-	    font-weight: normal;
-	    font-family: "Helvetica";
-	    color: "#FFFFFF";
-	    line-height: 22px;
-	}
-	p {
-		line-height: 30px;
-	}
-	body {
-	  display: flex;
-	  min-height: 10vh;
-	  flex-direction: column;
-	  margin: 0;
-	}
-	#main {
-	  display: flex;
-	  flex: 1;
-	}
-	#main > article {
-	  flex: 1;
-	}
-	#main > nav, 
-	
-	#main > nav {
-	  order: -1;
-	}
-	header, footer {
-	  background: #FFA0B0;
-	  height: 40vh;
-	}
-	header, footer, article {
-	  padding: 1em;
-	}
-	nav {
-		padding:2em;
-	}
-	</style></head>
+  h4 { 
+      font-size: 2em;
+      font-weight: normal;
+      font-family: "Helvetica";
+      color: "#FFFFFF";
+      line-height: 22px;
+  }
+  p {
+    line-height: 30px;
+  }
+  
+  body {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: row;
+    margin: 0;
+  }
 
-	<body bgcolor = FFA0B0>
-	  <header><center><h1><a target="_BLANK" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font color:#FFFFFF;">Lauren Hu</a></h1>
-	  <font face = "Helvetica" size = "4" color = "#FFFFFF">
-		<h4>General / Electrical Engineering<br/>Harvey Mudd College 2018</p> </font></h4></font></center>
-	</header>
-	  <div id="main">
+  .col-1 {
+    background: #FFA0B0;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 60vh;
+  }
+  header, footer {
+    background: #FFA0B0;
+    height: 35vh;
+  }
+  header, footer, article, nav {
+    padding: 2em;
+  }
+</style>
+<body bgcolor = FFA0B0>
+  <nav class="col-1"><br/><br/><img src = "headshot2.jpg" style="width:140px;height:140px;"/><font face = "Helvetica" size = "2" color = "#FFFFFF"><br/><br/><br/><br/><br/><b>Contact:</b> lhu@g.hmc.edu <br/>340 E Foothill Blvd. <br/>#313<br/>Claremont, CA 91711<br/><br/><a target="_BLANK" href="https://www.etsy.com/shop/RelativisticRhinos"><u>My Etsy Shop: <br/>Relativistic Rhinos</u></a></nav>
+  <div class="col-2">
+  	<header><h1><a target="_BLANK" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font color:#FFFFFF;">Lauren Hu</a></h1>
+    <font face = "Helvetica" size = "4" color = "#FFFFFF">
+    <h4>General / Electrical Engineering<br/>Harvey Mudd College 2018</p> </font></h4></font>
+  </header>
+    <main class="content">
 
-	    <article><font face = "Helvetica" size = "6" color = "#FFFFFF">
-		<a target="_BLANK" href="resume.pdf" style= "line-height: 60px; font color:#FFFFFF;"><u>resume</u><br/></a>
-		<a target="_BLANK" href="https://lhu808.github.io/schedule" style= "line-height: 60px; font color:#FFFFFF;"><u>schedule</u></a>
-		<p style=" line-height: 5px; font color:#FFFFFF;">projects</p>
-		<ul></font><font face = "Helvetica" size = "5" color = "#FFFFFF">
-		<li><a target="_BLANK" href="https://lhu808.github.io/e155" style="text-indent: 50px; line-height: 5px; font color:#FFFFFF;"><u>ukucorn - interactive ukulele</u></a></li>
-		<li><a target="_BLANK" href="https://writer.inklestudios.com/stories/36jn" style= "line-height: 5px; font color:#500060;"><u>short story - a tale of normalcy</u></a></li>
-		</ul></font>
-		<font face = "Helvetica" size = "4" color = "#FFFFFF">
-		<p><br/><br/>Let's go to 
-		<a href="https://lhu808.github.io/space" style= "font color:#FFFFFF;"><u>space</u></a>
-		</p></font>
+    <article>
+      <font face = "Helvetica" size = "6" color = "#FFFFFF">
+      <a target="_BLANK" href="resume.pdf" style= "line-height: 60px; font color:#FFFFFF;"><u>resume</u><br/></a>
 
-	</article>
-	    <nav><img src = "headshot.jpg" style="width:140px;height:140px;"/>
-	    	<font face = "Helvetica" size = "2" color = "#FFFFFF"><br/><br/><br/><br/><br/><br/><br/><b>Contact:</b> lhu@g.hmc.edu <br/>340 E Foothill Blvd. <br/>#313<br/>Claremont, CA 91711</nav>
-	   <!-- <aside>Aside</aside>-->
-	  </div>
-	  <footer></footer></font>
+      <p style=" line-height: 5px; font color:#FFFFFF;">projects</p>
+      <ul></font><font face = "Helvetica" size = "5" color = "#FFFFFF">
+      <li><a target="_BLANK" href="https://lhu808.github.io/e155" style="text-indent: 50px; line-height: 5px; font color:#FFFFFF;"><u>ukucorn - interactive ukulele</u></a></li>
+      <li><a target="_BLANK" href="https://writer.inklestudios.com/stories/36jn" style= "line-height: 5px; font color:#500060;"><u>short story - a tale of normalcy</u><br/><br/></a></li>
+      </ul></font>
 
-	</body>
-
-<!--<body bgcolor = "#FF9AA5">
-	<center>	
-
-	
-	#main > aside {
-	  flex: 1 0 0 20vw;
-	  background: #FFA0B0; //this goes in style but couldn't comment it out for some reason?
-	}
+      <font face = "Helvetica" size = "6" color = "#FFFFFF"><p style=" line-height: 5px; font color:#FFFFFF;">spring 2018 semester schedule</p></font>
+      <img src = "ScheduleSpring2018.jpg" width = "500"/>
 
 
-		<header>-->
-			<!--<font face = "Helvetica" size = "6em" color = "#FFFFFF">-->
-			<!--<h1><a target="_BLANK" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font color:#FFFFFF;">Lauren Hu</a></h1>
-		</header>
-		<font face = "Helvetica" size = "4" color = "#FFFFFF">
-		<h4>General / Electrical Engineering<br/>Harvey Mudd College 2018</p> </font></h4>
-		
-		<font face = "Helvetica" size = "6" color = "#FFFFFF">
-		<a target="_BLANK" href="resume.pdf" style= "line-height: 50px; font color:#FFFFFF;">resume</a> <br/>
-		<a target="_BLANK" href="https://writer.inklestudios.com/stories/36jn" style= "line-height: 30px; font color:#500060;">short story</a></font><br/>
-		<h1><img src = "headshot.jpg" style="width:140px;height:140px;"/></h1>
-		<font face = "Helvetica" size = "4" color = "#FFFFFF">
-		<p>Let's go to 
-		<a href="https://lhu808.github.io/space" style= "font color:#FFFFFF;">space</a>
-		</p></font>
+      <font face = "Helvetica" size = "4" color = "#FFFFFF">
+      <p><br/><br/>Let's go to 
+      <a href="https://lhu808.github.io/space" style= "font color:#FFFFFF;"><u>space</u></a>
+      </p></font>
+    </article>
 
-
-	</center>
-
-	
-</body> -->
-
-
-</html> 
+    </main>
+  	<footer></footer>
+  </div>
+</body> 
