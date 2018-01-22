@@ -30,30 +30,59 @@
 	a:active {
 	    color: purple;
 	}
-	h1 { 
-	    font-size: 4em;
-	    font-weight: bold;
-	    font-family: "Helvetica";
-	    color: "#FFFFFF";
-	    line-height: 25px;
-	}
+	 h1 { 
+      font-size: 3.5em;
+      font-weight: bold;
+      font-family: "Helvetica";
+      color: #FFFFFF;
+      line-height: 0.5em;
+  }
 
-	h4 { 
-	    font-size: 1.5em;
-	    font-weight: normal;
-	    font-family: "Helvetica";
-	    color: "#FFFFFF";
-	    line-height: 22px;
-	}
-	p {
-		line-height: 30px;
-	}
-	body {
-	  display: flex;
-	  min-height: 100vh;
-	  flex-direction: column;
-	  margin: 0;
-	}
+  h4 { 
+      font-size: 1em;
+      font-weight: normal;
+      font-family: "Helvetica";
+      color: #FFFFFF;
+      line-height: 0.5em;
+  }
+  
+  h3 {
+      font-size: 1.5em;
+      font-weight: normal;
+      font-family: "Helvetica";
+      color: #FFFFFF;
+      line-height: 0.6em;
+  }
+
+  h2 {
+      font-size: 2em;
+      font-weight: normal;
+      font-family: "Helvetica";
+      color: #FFFFFF;
+      line-height: 0.2em;
+  }
+
+  p {
+    font-size:1em;
+    font-weight: normal;
+    font-family: "Helvetica";
+    color: #FFFFFF;
+    line-height: 1.2em;
+  }
+
+  li {
+    font-size:1.2em;
+    font-weight: normal;
+    font-family: "Helvetica";
+    color: #FFFFFF;
+    line-height: 1.2em;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
 	
 	#main > article {
 	  flex: 1;
@@ -64,16 +93,15 @@
 	</style></head>
 
 	<body bgcolor = FFA0B0>
-		<center>
-	  <article><header><font face = "Helvetica" color = "#FFFFFF"><h1>The Ukucorn</h1>
-	 	  <font face = "Helvetica" size = "4" color = "#FFFFFF">
-		<h4>a ukulele teacher with chord recognition <br/><br/>&amp; interactive fretboard LEDs</h4></font></h4></font>
+		
+	  <article><header><h1>The Ukucorn</h1>
+		<h3>a ukulele teacher with chord recognition<br/><br/>&amp; interactive fretboard LEDs<br/><br/><br/>by Lauren Hu &amp; Sarah Wang<br/><br/></h3>
 	</header>
-
-	    <font face = "Helvetica" size = "5" color = "#FFFFFF">
-		<li><a target="_BLANK" href="hu_wang.pdf" style= "line-height: 60px; font color:#FFFFFF;"><u>Project Documentation</u><br/><br/></a></li>
-		<img src = "ukucornteam.jpg" style="width:400px; height:400px;">
-		<p>feat. Swang</p></font></article></center>
+		<li>We created an interactive fretboard to facilitate learning the ukulele. Five rows of LEDs under each string were embedded in the fretboard to display a target chord, only changing after the correct chord has been played. The analog signal from a piezo sensor placed on the ukulele body is passed to the FPGA through a low pass filter and analog-to-digital converter (ADC). An FFT (fast fourier transform) implemented in hardware on the FPGA identifies the magnitude of frequencies using the ADC output. Software on the Raspberry Pi uses this frequency analysis to identify the chord played and compare it to the target. Upon successful execution of the target chord, the LEDs on the fretboard change to display the next target chord in a hard-coded song.<br/><br/></li>
+		<li><a target="_BLANK" href="hu_wang.pdf"><u>Project Documentation<br/></u><br/><br/></a></li>
+		<img src = "ukucornteam.jpg" style="width:20em; height:20em;">&nbsp;&nbsp;
+		<img src = "ukuleleunicorns.jpg" style="height:20em;">
+		</article>
 
 
 	</body>
