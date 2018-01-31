@@ -98,7 +98,7 @@
 		<h3>a ukulele teacher with chord recognition<br/><br/>&amp; interactive fretboard LEDs<br/><br/><br/>by Lauren Hu &amp; Sarah Wang<br/><br/></h3>
 	</header>
 		<p>We created an interactive fretboard to facilitate learning the ukulele. Five rows of LEDs under each string were embedded in the fretboard to display a target chord, only changing after the correct chord has been played. The analog signal from a piezo sensor placed on the ukulele body is passed to the FPGA through a low pass filter and analog-to-digital converter (ADC). An FFT (fast fourier transform) implemented in hardware on the FPGA identifies the magnitude of frequencies using the ADC output. Software on the Raspberry Pi uses this frequency analysis to identify the chord played and compare it to the target. Upon successful execution of the target chord, the LEDs on the fretboard change to display the next target chord in a hard-coded song.<br/></p>
-		<p><a href="http://pages.hmc.edu/harris/class/e155/"><u>Project documentation<br/></u></a></p>
+		<p><a href="hu_wang.pdf"><u>Project documentation<br/></u></a></p>
 		<p><a target="_BLANK" href="http://pages.hmc.edu/harris/class/e155/"><u>E155 class website<br/></u><br/><br/></a></p>
 		<img src = "ukucornteam.jpg" style="width:20em; height:20em;">&nbsp;&nbsp;
 		<img src = "ukuleleunicorns.jpg" style="height:20em;">
